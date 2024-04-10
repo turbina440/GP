@@ -10,11 +10,18 @@ display: inline-block;}
 
 ul{text-decoration: none;}
 
-main{background: lightgrey;}
+main{background: snow;}
 
 footer{background: lightcoral;
 padding: 10px}
 
 
-.map {text-align: center;}
+MAIN {text-align: center;}
 
+@media only screen and (max-width:400px){
+	iframe{width: 90%;}
+	img{width: 	90%}
+	p{font-size: 10px}	
+	li{display: 	block;}
+	
+}
