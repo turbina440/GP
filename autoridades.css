@@ -26,8 +26,7 @@ background-color:darkred ;
 	place-items: CENTER;
 	color: white;
 	
-}	
-.bomberos{
+}	.bomberos{
 background-color:midnightblue ;
 	display:grid;
 	
@@ -80,3 +79,23 @@ align-items: center;
 height: 50px
 }
 button a{color: black;}
+
+@media only screen and (max-width:400px){
+	img{width: 50%;		}
+	li{display: 	block;
+		text-align: 	center;}
+.autoridades_policiales{
+
+	grid-template-rows: 2fr;
+	grid-template-columns:1fr;}
+
+	.civiles{
+
+
+	grid-template-rows: 2fr;
+	grid-template-columns:1fr ;}
+	.bomberos{
+	
+	grid-template-columns:1fr;}
+}
+}
