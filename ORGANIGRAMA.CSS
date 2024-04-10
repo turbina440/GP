@@ -10,9 +10,10 @@ font-family: sans-serif;
 }
 
 .tree{
-	width: 100%;
-	height: auto;
+	width: 900px;
+	height: 500px;
 	text-align: center;
+
 }
 .tree ul{
 	padding-top:20px ;
@@ -25,9 +26,14 @@ font-family: sans-serif;
 	text-align: center;
 	list-style-type: none;
 	position: relative;
-	padding: 0px;
+	padding: 5px;
 	transition: .5s;
+
+
 }
+
+li a{width: 75px}
+
 .tree li:before, .tree li:after{
 	content: '';
 	position: absolute;
@@ -48,7 +54,7 @@ font-family: sans-serif;
 }
 
 .tree li:only-child{
-	padding-top: 0;
+
 }
 
 .tree li:first-child:before, .tree li:last-child:after{
@@ -72,8 +78,8 @@ font-family: sans-serif;
 	height: 20px;
 }
 .tree a{
-	border: 1px solid#ccc;
-	padding: 0px;
+	border: 1px solid green;
+	padding: 10px 0;
 	display: inline-grid;
 	border-radius: 5px;
 	text-decoration-line: none;
@@ -97,14 +103,33 @@ font-family: sans-serif;
 	font-size:5px ;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 500;
+	font-weight: bold;
 }
-.tree li a:hover, .tree li a:hover img, .tree li a:hover span, .tree li a:hover+ul li a{
-	background: #c8e4f8;
+.tree li a:hover, .tree li a:hover img, .tree li a:hover span, .tree li a:hover+ul a{
+	background-color:#F5E9E9;
 	color: #000;
 	border: 1px solid #94a0b4;
 	box-shadow: 0 0 8px -5px #5f5f5f;
 }
 .tree li a:hover+ul li:after, .tree li a:hover+ul li:before, .tree li a:hover+ul:before, .tree li a:hover+ul ul:before{
-	border-color: #94a0b4 ;
+	border-color: red ;
+}
+
+
+.tree li a{background-color: #32D4E5;}
+li .gp1 a{background-color: #f5f5f5;}
+.gp1 ul a{background-color: yellow;}
+
+
+.tree img:hover{
+	width: 250px;
+height: 300px;
+z-index: 3}
+ 
+@media only screen and (max-width:400px){
+
+body{transform:rotate(90deg);}
+
+.tree{width: 900px;
+height: 1200px}
 }
